@@ -22,7 +22,7 @@ import axios from 'axios';
 //    exile_id: number;
 type Deck = {
   commander: string;
-  battlefeild: string;
+  battlefield: string;
   life: number;
   turn_num: number;
   id: number;
@@ -47,6 +47,9 @@ async function getDecks() {
     );
 
     console.log(JSON.stringify(data));
+    console.log(data);
+    // const decks = JSON.stringify(data);
+    
 
     // 👇️ "response status is: 200"
     console.log('response status is: ');
