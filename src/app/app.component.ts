@@ -47,12 +47,15 @@ async function getDecks() {
     );
 
     console.log(JSON.stringify(data));
+    var decks = JSON.stringify(data);
+    console.log(decks);
     console.log(data);
     // const decks = JSON.stringify(data);
     
 
     // 👇️ "response status is: 200"
     console.log('response status is: ');
+    return decks;
 
     return data;
   // } catch (error) {
@@ -75,4 +78,5 @@ getDecks();
 })
 export class AppComponent {
   title = 'commander';
+  decks = 'decks';
 }
