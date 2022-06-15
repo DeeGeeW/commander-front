@@ -55,6 +55,11 @@ async function getDecks() {
 
     // 👇️ "response status is: 200"
     console.log('response status is: ');
+    var i = 0;
+    while (i < decks.length) {
+      return decks[i];
+      i++;
+    }
     return decks;
 
     return data;
