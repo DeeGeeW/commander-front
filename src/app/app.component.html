@@ -4,11 +4,13 @@
   <body class="home-bg">
     <div class="home-headline">
       <h1>Test Commander</h1>
-      <div ngFor="deck in Decks" >
-        
-      <!-- <p>{{ deck[battlefeild] }}</p> -->
-      <!-- <img alt="deck.commander" class="commander-image" src={{ deck["commander"] }}> -->
-    </div>
+      <li *ngFor="let deck of this.decks; let i = index">
+        {{i}} {{deck}}
+        <div>
+          <p></p>
+          <!-- <img class = "commander-image" src="decks.commander"> -->
+        </div>
+      </li>
 
   </div>
 </body>
