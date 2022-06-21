@@ -4,13 +4,13 @@
   <body class="home-bg">
     <div class="home-headline">
       <h1>Test Commander</h1>
-      <li *ngFor="let deck of this.decks; let i = index">
+      <li *ngFor="let deck of decks; let i = index">
         {{i}} {{deck}}
         <div>
-          <p></p>
-          <!-- <img class = "commander-image" src="decks.commander"> -->
+          
+          <img class = "commander-image" src=decks[i][:commander]>
         </div>
-      </li>
+      <!-- </li> -->
 
   </div>
 </body>
