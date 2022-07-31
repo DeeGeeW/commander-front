@@ -4,8 +4,10 @@
   <body class="home-bg">
     <div class="home-headline">
       <h1>Test Commander</h1>
-      <li *ngFor="let deck of decks; let i = index;">
-        {{i}} {{deck}}
+      <!-- <tr *ngFor="let deck of decks"> -->
+        
+      <li *ngFor="let deck of this.decks; let i = index;">
+        <p>{{i}} </p>
         <div>
           
           <img src="deck.commander_image" alt="">
@@ -18,7 +20,9 @@
 
 
 <style>
-
+h1 {
+  color: mediumseagreen;
+}
 .home-headline {
   text-align: center;
 }

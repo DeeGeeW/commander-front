@@ -48,7 +48,7 @@ async function getDecks() {
 
     console.log(JSON.stringify(data));
     var decks = JSON.stringify(data);
-    console.log(decks);
+    console.log(decks[0]);
     console.log(data);
     // const decks = JSON.stringify(data);
     
@@ -61,7 +61,7 @@ async function getDecks() {
     // }
     return decks;
 
-    return data;
+    // return data;
   // } catch (error) {
   //   if (axios.isAxiosError(error)) {
   //     console.log('error message: ', error.message);
