@@ -32,7 +32,7 @@ type Deck = {
 
 
 type GetDecksResponse = {
-  data: Deck[];
+  data: Deck;
 };
 
 async function getDecks() {
@@ -51,10 +51,6 @@ async function getDecks() {
     console.log(decks[0]);
     console.log(data);
     // const decks = JSON.stringify(data);
-    
-
-    // 👇️ "response status is: 200"
-    console.log('response status is: ');
     // while (i < decks.length) {
     //   return decks[i];
     //   i++;
