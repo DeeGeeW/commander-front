@@ -32,7 +32,7 @@ type Deck = {
 
 
 type GetDecksResponse = {
-  data: Deck;
+  data: Deck
 };
 
 async function getDecks() {
@@ -46,9 +46,10 @@ async function getDecks() {
       },
     );
 
-    console.log(JSON.stringify(data));
-    var decks = JSON.stringify(data);
-    console.log(decks[0]);
+    console.log((data));
+    var decks = (data);
+    
+    console.log(decks);
     console.log(data);
     // const decks = JSON.stringify(data);
     // while (i < decks.length) {

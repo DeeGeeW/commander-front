@@ -5,8 +5,27 @@
     <div class="home-headline">
       <h1>Test Commander</h1>
       <!-- <tr *ngFor="let deck of decks"> -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Department</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <ng-container *ngIf="decks.length">
+             <tbody *ngFor="let deck of decks; let i = index">
+              <td>{{deck}}</td>
+               <!-- <tr *ngFor="let deck of doc.decks;">
+                 <td>{{deck.department}}</td>
+                 <td>{{deck.name}}</td>
+                 <td>{{deck.age}}</td>
+               </tr> -->
+             </tbody>
+           </ng-container>
+         </table>
         
-      <li *ngFor="let deck of this.decks; let i = index;">
+      <li *ngFor="let deck of decks; let i = index;">
         <p>{{i}} </p>
         <div>
           
